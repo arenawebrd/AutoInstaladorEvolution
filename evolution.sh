@@ -74,6 +74,10 @@ rm /etc/nginx/sites-enabled/default
 
 clear
 
+cd
+
+cd
+
 #######################################################
 
 git clone https://github.com/EvolutionAPI/evolution-api.git
@@ -81,6 +85,8 @@ git clone https://github.com/EvolutionAPI/evolution-api.git
 cd evolution-api
 
 git branch -a
+
+cd
 
 cd
 
@@ -237,7 +243,9 @@ sudo mv env.yml evolution-api/src/env.yml
 
 cd
 
-cd evolution-api && npm install
+cd evolution-api
+
+npm install
 
 echo "Iniciando pm2"
 
