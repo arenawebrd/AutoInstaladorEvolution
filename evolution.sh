@@ -90,7 +90,7 @@ cd
 
 cd
 
-echo "Instalando as Dependencias"
+echo "Criando Env e Instalando com NPM"
 
 cat > env.yml << EOL
 # Choose the server type for the application
@@ -258,6 +258,8 @@ pm2 save --force
 #######################################################
 
 clear
+
+cd
 
 cd
 
