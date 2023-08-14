@@ -57,9 +57,11 @@ sudo apt upgrade -y
 
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - && apt-get install -y nodejs
 
-npm install -g npm@latest
+#npm install -g npm@latest
 
-npm install -g pm2@latest && apt-get install -y git zip unzip nload snapd curl wget sudo
+#npm install -g pm2@latest
+
+apt-get install -y git zip unzip nload snapd curl wget sudo
 
 sudo timedatectl set-timezone America/Sao_Paulo
 
