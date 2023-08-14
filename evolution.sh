@@ -86,6 +86,8 @@ cd evolution-api
 
 git branch -a
 
+git checkout develop
+
 cd
 
 cd
