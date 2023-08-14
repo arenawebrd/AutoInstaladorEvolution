@@ -286,7 +286,7 @@ server {
 EOL
 
 #######################################################
-
+clear
 cd
 
 sudo mv api /etc/nginx/sites-available/api
@@ -298,7 +298,8 @@ systemctl reload nginx
 sudo certbot --nginx --email $mail --redirect --agree-tos -d $dominio
 
 #######################################################
-
+cd
+cd
 echo -e "\e[32m\e[0m"
 echo -e "\e[32m\e[0m"
 echo -e "\e[32m\e[0m"
