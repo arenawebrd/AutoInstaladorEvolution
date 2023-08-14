@@ -53,7 +53,7 @@ Entre em contato comigo através do WhatsApp [clicando aqui](http://wa.me/+55119
 
 ### ❤️ Agradecimentos
 
-Agradoço especialmente o <a href="https://github.com/DeividMs">Deivid Santos</a> por ter me ensinado e insentivado a usar o GitHub, alem de me ensinar muitas outras coisas do universo da programação.
+Agradoço especialmente o <a href="https://github.com/DeividMs">Deivid Santos</a> por ter me ensinado e incentivado a usar o GitHub, alem de me ensinar muitas outras coisas do universo da programação.
 Tambem meus agradecimentos para o pessoal da comunidade <a href="https://github.com/cwmkt">CWMKT</a> e <a href="https://evolution-api.com/opensource-whatsapp-api/">CWMKT</a>.
 <br><br><br>
 Agora fique com o pato dançando:<br><br>
