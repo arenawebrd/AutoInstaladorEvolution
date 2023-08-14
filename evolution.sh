@@ -4,20 +4,20 @@ clear
 echo -e "\e[32m\e[0m"
 echo -e "\e[32m\e[0m"
 echo -e "\e[32m\e[0m"
-echo -e "\e[32m _                             _              _               32m\e[0m"
-echo -e "\e[32m| |                _          | |            | |              32m\e[0m"
-echo -e "\e[32m| | ____    ___  _| |_  _____ | |  _____   __| |  ___    ____ 32m\e[0m"
-echo -e "\e[32m| ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \  / ___)32m\e[0m"
-echo -e "\e[32m| || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| || |    32m\e[0m"
-echo -e "\e[32m|_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/ |_|    32m\e[0m"
-echo -e "\e[32m                                                              32m\e[0m"
-echo -e "\e[32m _______                _                 _                  _______  ______   _ 32m\e[0m"
-echo -e "\e[32m(_______)              | |           _   (_)                (_______)(_____ \ | |32m\e[0m"
-echo -e "\e[32m _____    _   _   ___  | |  _   _  _| |_  _   ___   ____     _______  _____) )| |32m\e[0m"
-echo -e "\e[32m|  ___)  | | | | / _ \ | | | | | |(_   _)| | / _ \ |  _ \   |  ___  ||  ____/ | |32m\e[0m"
-echo -e "\e[32m| |_____  \ V / | |_| || | | |_| |  | |_ | || |_| || | | |  | |   | || |      | |32m\e[0m"
-echo -e "\e[32m|_______)  \_/   \___/  \_)|____/    \__)|_| \___/ |_| |_|  |_|   |_||_|      |_|32m\e[0m"
-echo -e "\e[32m                                                                                 32m\e[0m"
+echo -e "\e[32m _                             _              _               \e[0m"
+echo -e "\e[32m| |                _          | |            | |              \e[0m"
+echo -e "\e[32m| | ____    ___  _| |_  _____ | |  _____   __| |  ___    ____ \e[0m"
+echo -e "\e[32m| ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \  / ___)\e[0m"
+echo -e "\e[32m| || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| || |    \e[0m"
+echo -e "\e[32m|_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/ |_|    \e[0m"
+echo -e "\e[32m                                                              \e[0m"
+echo -e "\e[32m _______                _                 _                  _______  ______   _ \e[0m"
+echo -e "\e[32m(_______)              | |           _   (_)                (_______)(_____ \ | |\e[0m"
+echo -e "\e[32m _____    _   _   ___  | |  _   _  _| |_  _   ___   ____     _______  _____) )| |\e[0m"
+echo -e "\e[32m|  ___)  | | | | / _ \ | | | | | |(_   _)| | / _ \ |  _ \   |  ___  ||  ____/ | |\e[0m"
+echo -e "\e[32m| |_____  \ V / | |_| || | | |_| |  | |_ | || |_| || | | |  | |   | || |      | |\e[0m"
+echo -e "\e[32m|_______)  \_/   \___/  \_)|____/    \__)|_| \___/ |_| |_|  |_|   |_||_|      |_|\e[0m"
+echo -e "\e[32m                                                                                 \e[0m"
 echo -e "\e[32m\e[0m"
 echo -e "\e[32m\e[0m"
 echo -e "\e[32m\e[0m"
@@ -29,6 +29,8 @@ sleep 3
 echo "Preencha as informações a serguir para criar o env"
 echo ""
 read -p "Digite seu dominio para acessar a api (ex: api.dominio.com): " dominio
+echo ""
+read -p "Digite a porta da api (padrão: 8080): " porta
 echo ""
 read -p "Digite o nome da sua empresa (ex: OrionDesign): " client
 echo ""
@@ -88,7 +90,7 @@ cat > env.yml << EOL
 # Choose the server type for the application
 SERVER:
   TYPE: http # https
-  PORT: 8080 # 443
+  PORT: $porta # 443
   URL: https://$dominio
 
 CORS:
@@ -258,7 +260,7 @@ server {
   server_name $dominio;
 
   location / {
-    proxy_pass http://127.0.0.1:8080;
+    proxy_pass http://127.0.0.1:$porta;
     proxy_http_version 1.1;
     proxy_set_header Upgrade \$http_upgrade;
     proxy_set_header Connection 'upgrade';
