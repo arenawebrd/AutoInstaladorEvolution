@@ -28,7 +28,7 @@ Antes de instalar, é de extrema importancia que você crie 1 registro no DNS, s
 
 1- Copie o seguinte comando e cole em seu terminal:
 ```
-git clone https://github.com/oriondesign2015/AutoInstaladorEvolution.git && cd AutoInstaladorEvolution && chmod +x evolution.sh && ./evolution.sh
+sudo apt install -y git && git clone https://github.com/oriondesign2015/AutoInstaladorEvolution.git && cd AutoInstaladorEvolution && chmod +x evolution.sh && ./evolution.sh
 ```
 
 Ao executar esse código, ele pedirá para você fornecer as seguintes informações:
