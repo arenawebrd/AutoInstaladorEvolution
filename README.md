@@ -7,7 +7,8 @@ Nessa versão você pode estar escolhendo as portas na instalação o que possib
 
 ### 📌 Observações importantes:
 
-Instalação feita em Docker (Se tiver outros Containers pode ser que eles caiam durante o processo de instalação com este Auto Instalador;
+Instalação feita em NPM;
+A versão em Docker está em desenvolvimento;
 
 Recomendo criar uma snapshot da sua vps para evitar qualquer problema que possa vir acontecer;
 
