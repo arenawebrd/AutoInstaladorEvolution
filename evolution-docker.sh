@@ -94,9 +94,11 @@ git checkout develop
 
 cd
 
+cd
+
 echo "Instalando as Dependencias"
 
-cat > env.yml << EOL
+cat > .env << EOL
 
 SERVER_URL=http://$dominio
 
@@ -199,9 +201,13 @@ AUTHENTICATION_JWT_EXPIRIN_IN=0
 AUTHENTICATION_JWT_SECRET='noironoironoiro'
 EOL
 
+cd
+
+cd
+
 #######################################################
 
-sudo mv env.yml evolution-api/src/env.yml
+sudo mv .env evolution-api/Docker/.env
 
 cd
 
