@@ -82,11 +82,11 @@ cd
 
 git clone https://github.com/EvolutionAPI/evolution-api.git
 
-cd evolution-api
+#cd evolution-api
 
-git branch -a
+#git branch -a
 
-git checkout develop
+#git checkout develop
 
 cd
 
