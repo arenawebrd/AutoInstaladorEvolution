@@ -24,7 +24,7 @@ Antes de instalar, é de extrema importancia que você crie 1 registro no DNS, s
 
 <hr/>
 
-## 📀 Instalando Typebot 
+## 📀 Instalando Evolution API 
 ### Copie o seguinte comando e cole em seu terminal
 
 Normal
