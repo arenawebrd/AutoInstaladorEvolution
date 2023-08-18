@@ -31,7 +31,8 @@ Normal
 ```
 sudo apt install -y git && git clone https://github.com/oriondesign2015/AutoInstaladorEvolution.git && cd AutoInstaladorEvolution && chmod +x evolution.sh && ./evolution.sh
 ```
-Developer
+
+ou Developer
 ```
 sudo apt install -y git && git clone https://github.com/oriondesign2015/AutoInstaladorEvolution.git && cd AutoInstaladorEvolution && chmod +x evolution_dev.sh && ./evolution_dev.sh
 ```
